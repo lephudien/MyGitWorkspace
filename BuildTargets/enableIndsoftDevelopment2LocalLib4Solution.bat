@@ -1,0 +1,1 @@
+echo .>S:\InsoftDevelopment2LocalLib4Solution.txt

@@ -1,0 +1,1 @@
+echo .>S:\IndsoftReplaceNugetReferences.txt

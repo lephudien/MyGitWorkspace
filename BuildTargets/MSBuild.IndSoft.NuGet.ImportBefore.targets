@@ -11,7 +11,7 @@
 		<IndSoftTargetDevelopment2LocalLibPath>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.Development2LocalLib.targets</IndSoftTargetDevelopment2LocalLibPath>
 		<IndSoftTargetReplaceNugetReferences>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets</IndSoftTargetReplaceNugetReferences>
 		<!-- TODO-NAT-->
-		<IndSoftNugetCacheFolderMask>$NuGetPackageFolders</IndSoftNugetCacheFolderMask>
+		<IndSoftNugetCacheFolderMask>$(NuGetPackageFolders)</IndSoftNugetCacheFolderMask>
   </PropertyGroup>
 	<!-- Parametry s pouzitim prepinacu -->
   <PropertyGroup>

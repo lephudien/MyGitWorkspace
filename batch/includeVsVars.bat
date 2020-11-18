@@ -42,7 +42,7 @@ goto END
 
 :VS2019
 rem TODO-NAT po odladeni uvolnit tenhle rem
-rem @if "%INCLUDE%" == "" call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\VsDevCmd.bat"
+@if "%INCLUDE%" == "" call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\VsDevCmd.bat"
 goto END
 
 :END

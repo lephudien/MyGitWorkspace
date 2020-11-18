@@ -1,15 +1,17 @@
-echo ===== batch\refresh.bat START
+	echo ===== batch\refresh.bat START
 
 cd %~d0%~p0
 
-call "S:\MyGitWorkspace\batch\includeVsVars.bat"
+call S:\MyGitWorkspace\batch\includeVsVars.bat
 
 md S:\Library
 md S:\Library\Debug
 md S:\Library\Release
 
-call "S:\MyGitWorkspace\batch\DeveloperSettings.bat"
-call getDirFromGit.bat "S:\MyGitWorkspace\"
+echo Setting debug version before
+call S:\MyGitWorkspace\batch\DeveloperSettings.bat
+rem TODO-NAT tady bude ziskavani Git pro ruzne repository
+rem call getDirFromGit.bat "S:\MyGitWorkspace\"
 
 rem getneme ignore file pro cele S:
 rem TODO-NAT, je treba neco podobneho u GITu?
@@ -30,7 +32,7 @@ echo.
 echo.
 echo.
 
-echo Setting debug version
+echo Setting debug version after
 call S:\MyGitWorkspace\batch\DeveloperSettings.bat
 
 echo.

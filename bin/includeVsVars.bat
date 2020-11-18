@@ -1,4 +1,4 @@
-echo ===== batch\includeVsVars.bat START
+echo ===== bin\includeVsVars.bat START
 
 @echo off
 echo Initialising Visual Studio Developer Command Prompt ...
@@ -48,4 +48,4 @@ goto END
 :END
 echo VS Env initialized.
 
-echo ===== batch\includeVsVars.bat END
+echo ===== bin\includeVsVars.bat END

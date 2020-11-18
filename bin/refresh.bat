@@ -1,15 +1,15 @@
-	echo ===== batch\refresh.bat START
+	echo ===== bin\refresh.bat START
 
 cd %~d0%~p0
 
-call S:\MyGitWorkspace\batch\includeVsVars.bat
+call S:\MyGitWorkspace\bin\includeVsVars.bat
 
 md S:\Library
 md S:\Library\Debug
 md S:\Library\Release
 
 echo Setting debug version before
-call S:\MyGitWorkspace\batch\DeveloperSettings.bat
+call S:\MyGitWorkspace\bin\DeveloperSettings.bat
 rem TODO-NAT tady bude ziskavani Git pro ruzne repository
 rem call getDirFromGit.bat "S:\MyGitWorkspace\"
 
@@ -33,7 +33,7 @@ echo.
 echo.
 
 echo Setting debug version after
-call S:\MyGitWorkspace\batch\DeveloperSettings.bat
+call S:\MyGitWorkspace\bin\DeveloperSettings.bat
 
 echo.
 echo.
@@ -58,4 +58,4 @@ pause
 
 :QUIT
 
-echo ===== batch\refresh.bat STOP
+echo ===== bin\refresh.bat STOP

@@ -1,12 +1,12 @@
 rem @ECHO OFF
 set PARAM1=%~f1
 if "%~1" == "" set PARAM1=%cd%
-echo ===== batch\getDirFromGit.bat %PARAM1% START
+echo ===== bin\getDirFromGit.bat %PARAM1% START
 rem parametr je %1 = cesta k reposity (bez jmena) - jen dir.
 rem VS 2005 tools
 rem call SdkVars.bat
 rem VS 2008  tools
-call "S:\MyGitWorkspace\batch\includeVsVars.bat"
+call "S:\MyGitWorkspace\bin\includeVsVars.bat"
 pushd %PARAM1%
 
 set GITRETRY=0
@@ -40,5 +40,5 @@ ECHO OK!
 popd
 
 echo Task %~f0 %* ended.
-echo ===== batch\getDirFromGit.bat %PARAM1% END
+echo ===== bin\getDirFromGit.bat %PARAM1% END
 rem pause

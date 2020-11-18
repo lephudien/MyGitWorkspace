@@ -7,7 +7,7 @@
 		<!-- Kde se nachazi temp folder pro kopirovani z projektu nez kopirujeme do LocalLib (DLLs), tento parametr pouziva vsechny targety -->
     <IndSoftLocalLibTempPath>S:\TestLib\_temp</IndSoftLocalLibTempPath>
 		<!-- Kde se nachazi IndSoft Targets (ReplaceNugetReferences, Development2LocalLib...)-->
-		<IndSoftTargetsPath>s:\MyWorkspace\BuildTargets</IndSoftTargetsPath>
+		<IndSoftTargetsPath>s:\MyGitWorkspace\BuildTargets</IndSoftTargetsPath>
 		<IndSoftTargetDevelopment2LocalLibPath>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.Development2LocalLib.targets</IndSoftTargetDevelopment2LocalLibPath>
 		<IndSoftTargetReplaceNugetReferences>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets</IndSoftTargetReplaceNugetReferences>
 		<!-- TODO-NAT-->

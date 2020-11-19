@@ -5,7 +5,9 @@
 		<Message Importance="High" Text="ReplaceNugetReferences"/>
 		<!-- Vypis puvodni reference pred nahrazenim -->
 		<Message Importance="High" Text="Pouzite reference puvodni: %(Reference.Identity)"/>
+		<!-- pouze pro DEBUGING 
 		<WriteLinesToFile File="$(SolutionDir)References01BeforeReplacing.txt" Lines="@(Reference)" Overwrite="true"/>
+		-->
 		<IndSoftReplaceNugetReferences ReferencesIn="@(Reference)" FolderLocalLibDev="$(IndSoftLocalLibPath)" FolderNugetCacheNeedReplaceMask="$(IndSoftNugetCacheFolderMask)">
 		  <Output TaskParameter="referencesOut" PropertyName="ReferencesOutFromTask"/>
 		</IndSoftReplaceNugetReferences>
@@ -18,6 +20,8 @@
 		</ItemGroup>		
 		<!-- Vypis finalni reference po nahrazenim -->
 		<Message Importance="High" Text="Nove reference po nahrazeni: %(Reference.Identity)"/>
+		<!-- pouze pro DEBUGING 
 		<WriteLinesToFile File="$(SolutionDir)References02AfterReplacing.txt" Lines="@(Reference)" Overwrite="true"/>
+		-->
 	</Target>
 </Project>

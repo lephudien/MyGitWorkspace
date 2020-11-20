@@ -33,8 +33,8 @@ goto END_COPY
 
 :END_COPY
 
-rem Kopirovani batch soubor pro enable do S:\
-copy "BuildTargets\enable*.bat" s:\ /Y
+rem Kopirovani batch soubor pro enable do R:\
+copy "BuildTargets\enable*.bat" R:\ /Y
 echo ===== after GITPULL akce po END
 
 

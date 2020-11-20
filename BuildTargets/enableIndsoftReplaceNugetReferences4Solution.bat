@@ -1,1 +1,1 @@
-echo .>S:\IndsoftReplaceNugetReferences4Solution.txt
+echo .>R:\IndsoftReplaceNugetReferences4Solution.txt

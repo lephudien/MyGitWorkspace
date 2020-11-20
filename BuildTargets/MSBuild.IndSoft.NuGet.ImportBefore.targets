@@ -3,11 +3,11 @@
 	<!-- Vychozi parametry pro vsechny targety -->
   <PropertyGroup>
 		<!-- Kde se nachazi LocalLib (DLLs), tento parametr pouziva vsechny targety -->
-		<IndSoftLocalLibPath>S:\TestLib</IndSoftLocalLibPath>
+		<IndSoftLocalLibPath>R:\TestLib</IndSoftLocalLibPath>
 		<!-- Kde se nachazi temp folder pro kopirovani z projektu nez kopirujeme do LocalLib (DLLs), tento parametr pouziva vsechny targety -->
-    <IndSoftLocalLibTempPath>S:\TestLib\_temp</IndSoftLocalLibTempPath>
+    <IndSoftLocalLibTempPath>R:\TestLib\_temp</IndSoftLocalLibTempPath>
 		<!-- Kde se nachazi IndSoft Targets (ReplaceNugetReferences, Development2LocalLib...)-->
-		<IndSoftTargetsPath>s:\MyGitWorkspace\BuildTargets</IndSoftTargetsPath>
+		<IndSoftTargetsPath>R:\MyGitWorkspace\BuildTargets</IndSoftTargetsPath>
 		<IndSoftTargetDevelopment2LocalLibPath>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.Development2LocalLib.targets</IndSoftTargetDevelopment2LocalLibPath>
 		<IndSoftTargetReplaceNugetReferences>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets</IndSoftTargetReplaceNugetReferences>
 		<!-- TODO-NAT-->
@@ -19,14 +19,14 @@
 		<IndSoftIsDevelopment2LocalLib>false</IndSoftIsDevelopment2LocalLib>
 		<IndSoftIsReplaceNugetReferences>false</IndSoftIsReplaceNugetReferences>
 		<!-- Zda budeme importovat target: bud je zapnuty globalne nebo v solutionu -->
-		<IndSoftIsDevelopment2LocalLib Condition="Exists('S:\InsoftDevelopment2LocalLib.txt') OR Exists('$(SolutionDir)\InsoftDevelopment2LocalLib4Solution.txt')">true</IndSoftIsDevelopment2LocalLib>
-		<IndSoftIsReplaceNugetReferences Condition="Exists('S:\IndsoftReplaceNugetReferences.txt') OR Exists('$(SolutionDir)\IndsoftReplaceNugetReferences4Solution.txt')">true</IndSoftIsReplaceNugetReferences>
+		<IndSoftIsDevelopment2LocalLib Condition="Exists('R:\InsoftDevelopment2LocalLib.txt') OR Exists('$(SolutionDir)\InsoftDevelopment2LocalLib4Solution.txt')">true</IndSoftIsDevelopment2LocalLib>
+		<IndSoftIsReplaceNugetReferences Condition="Exists('R:\IndsoftReplaceNugetReferences.txt') OR Exists('$(SolutionDir)\IndsoftReplaceNugetReferences4Solution.txt')">true</IndSoftIsReplaceNugetReferences>
 	</PropertyGroup>
 	<Target Name="IndSoftBeforeImportInfo" AfterTargets="BeforeBuild">
 		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftTargetDevelopment2LocalLibPath: $(IndSoftTargetDevelopment2LocalLibPath)" Importance="High" />
-		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftTargetReplaceNugetReferences: $(IndSoftTargetReplaceNugetReferences)" Importance="High" />
+		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftTargetReplaceNugetReferenceR: $(IndSoftTargetReplaceNugetReferences)" Importance="High" />
 		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftIsDevelopment2LocalLib: $(IndSoftIsDevelopment2LocalLib)" Importance="High" />
-		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftIsReplaceNugetReferences: $(IndSoftIsReplaceNugetReferences)" Importance="High" />
+		<Message Text="Target IndSoftBeforeImportInfo. Hodnota IndSoftIsReplaceNugetReferenceR: $(IndSoftIsReplaceNugetReferences)" Importance="High" />
 	</Target>
 	<Import Project="$(IndSoftTargetDevelopment2LocalLibPath)" Condition="'$(IndSoftIsDevelopment2LocalLib)'=='true'" />
 	<Import Project="$(IndSoftTargetReplaceNugetReferences)" Condition="'$(IndSoftIsReplaceNugetReferences)'=='true'" />

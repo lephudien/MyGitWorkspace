@@ -2,20 +2,20 @@
 
 cd %~d0%~p0
 
-call S:\MyGitWorkspace\bin\includeVsVars.bat
+call R:\MyGitWorkspace\bin\includeVsVars.bat
 
-md S:\Library
-md S:\Library\Debug
-md S:\Library\Release
+md R:\Library
+md R:\Library\Debug
+md R:\Library\Release
 
 echo Setting debug version before
-call S:\MyGitWorkspace\bin\DeveloperSettings.bat
+call R:\MyGitWorkspace\bin\DeveloperSettings.bat
 rem TODO-NAT tady bude ziskavani Git pro ruzne repository
-rem call getDirFromGit.bat "S:\MyGitWorkspace\"
+rem call getDirFromGit.bat "R:\MyGitWorkspace\"
 
-rem getneme ignore file pro cele S:
+rem getneme ignore file pro cele R:
 rem TODO-NAT, je treba neco podobneho u GITu?
-rem tf.exe get S:\.tfignore
+rem tf.exe get R:\.tfignore
 
 rem TODO-NAT, je treba neco podobneho u noveho MSBuildu (nova koncepce)?
 rem call initNugetEnvironment.bat
@@ -23,9 +23,9 @@ rem nebudeme rusit build
 rem if NOT %ERRORLEVEL% EQU 0 GOTO ERROR
 
 rem TODO-NAT, je treba neco podobneho u noveho MSBuildu (nova koncepce)?
-rem LS: release se stejne nikde nepouziva. Smazeme aby to nikho nematlo
-del /Q/S S:\Library\Release 
-rem call "S:\IND\CommonLibrary\Fwk 2.0\Library\rebuildRelease.bat" /nopause
+rem LR: release se stejne nikde nepouziva. Smazeme aby to nikho nematlo
+del /Q/S R:\Library\Release 
+rem call "R:\IND\CommonLibrary\Fwk 2.0\Library\rebuildRelease.bat" /nopause
 rem if NOT %ERRORLEVEL% EQU 0 GOTO ERROR
 
 echo.
@@ -33,7 +33,7 @@ echo.
 echo.
 
 echo Setting debug version after
-call S:\MyGitWorkspace\bin\DeveloperSettings.bat
+call R:\MyGitWorkspace\bin\DeveloperSettings.bat
 
 echo.
 echo.

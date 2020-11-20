@@ -23,9 +23,9 @@ if NOT EXIST "%DIRECTORY%\%SOLUTION%" GOTO :NOTFOUNDERROR
 
 echo B - Build -  %DIRECTORY%, solution=%SOLUTION%
 
-call "S:\MyGitWorkspace\bin\includeVsVars.bat"
+call "R:\MyGitWorkspace\bin\includeVsVars.bat"
 
-call S:\MyGitWorkspace\bin\msbuild.bat /m "%DIRECTORY%\%SOLUTION%" 
+call R:\MyGitWorkspace\bin\msbuild.bat /m "%DIRECTORY%\%SOLUTION%" 
 
 
 goto :end

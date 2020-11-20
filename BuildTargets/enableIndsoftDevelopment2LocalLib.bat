@@ -1,2 +1,2 @@
-del /Q /S S:\Library\Nuget-LibraryDev
-echo .>S:\InsoftDevelopment2LocalLib.txt
+del /Q /S R:\Library\Nuget-LibraryDev
+echo .>R:\InsoftDevelopment2LocalLib.txt

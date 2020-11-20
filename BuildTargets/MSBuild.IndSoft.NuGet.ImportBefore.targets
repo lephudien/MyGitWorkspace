@@ -3,9 +3,9 @@
 	<!-- Vychozi parametry pro vsechny targety -->
   <PropertyGroup>
 		<!-- Kde se nachazi LocalLib (DLLs), tento parametr pouziva vsechny targety -->
-		<IndSoftLocalLibPath>R:\TestLib</IndSoftLocalLibPath>
+		<IndSoftLocalLibPath>R:\Library\LocalLib</IndSoftLocalLibPath>
 		<!-- Kde se nachazi temp folder pro kopirovani z projektu nez kopirujeme do LocalLib (DLLs), tento parametr pouziva vsechny targety -->
-    <IndSoftLocalLibTempPath>R:\TestLib\_temp</IndSoftLocalLibTempPath>
+    <IndSoftLocalLibTempPath>R:\Library\LocalLib\_temp</IndSoftLocalLibTempPath>
 		<!-- Kde se nachazi IndSoft Targets (ReplaceNugetReferences, Development2LocalLib...)-->
 		<IndSoftTargetsPath>R:\MyGitWorkspace\BuildTargets</IndSoftTargetsPath>
 		<IndSoftTargetDevelopment2LocalLibPath>$(IndSoftTargetsPath)\MSBuild.IndSoft.NuGet.Development2LocalLib.targets</IndSoftTargetDevelopment2LocalLibPath>

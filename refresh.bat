@@ -6,8 +6,10 @@ pushd %~d0%~p0
 
 echo ===== GIT PULL START for repository MyGitWorkspace
 rem Nejprve ziskavame MyGitWorkspace abychom meli vsechny batch soubory cerstve
-git reset --hard HEAD
-git pull
+git fetch --all
+git reset --hard
+rem git reset --hard HEAD
+rem git pull
 echo ===== GIT PULL END for repository MyGitWorkspace
 
 echo ===== after GITPULL akce START

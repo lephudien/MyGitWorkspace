@@ -5,8 +5,9 @@ cd %~d0%~p0
 call R:\MyGitWorkspace\bin\includeVsVars.bat
 
 md R:\Library
-md R:\Library\Debug
-md R:\Library\Release
+rem md R:\Library\Debug
+rem md R:\Library\Release
+md R:\Library\LocalLib
 
 echo Setting debug version before
 call R:\MyGitWorkspace\bin\DeveloperSettings.bat
@@ -24,7 +25,7 @@ rem if NOT %ERRORLEVEL% EQU 0 GOTO ERROR
 
 rem TODO-NAT, je treba neco podobneho u noveho MSBuildu (nova koncepce)?
 rem LR: release se stejne nikde nepouziva. Smazeme aby to nikho nematlo
-del /Q/S R:\Library\Release 
+rem del /Q/S R:\Library\Release 
 rem call "R:\IND\CommonLibrary\Fwk 2.0\Library\rebuildRelease.bat" /nopause
 rem if NOT %ERRORLEVEL% EQU 0 GOTO ERROR
 

@@ -45,7 +45,7 @@ if NOT ERRORLEVEL 0 GOTO ERROR
 
 echo Running scripts
 
-rem call "%~d0%~p0\bin\refresh.bat"
+call "%~d0%~p0\bin\refresh.bat"
 
 cd %~d0%~p0
 

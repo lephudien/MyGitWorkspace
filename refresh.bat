@@ -6,7 +6,7 @@ pushd %~d0%~p0
 
 echo ===== GIT PULL START for repository MyGitWorkspace
 rem Nejprve ziskavame MyGitWorkspace abychom meli vsechny batch soubory cerstve
-git reset --hard origin/master
+git reset --hard
 git clean -f -d  -x
 git pull
 rem git reset --hard HEAD

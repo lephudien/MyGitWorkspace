@@ -41,7 +41,8 @@ echo.
 echo.
 echo.
 echo ***************MyGitWorkspace refreshed*****************
-echo See log file - %TEMP%\AllBuild.log
+echo OK
+rem echo See log file - %TEMP%\AllBuild.log
 echo ***************************************************
 
 pause
@@ -51,7 +52,8 @@ goto :QUIT
 :ERROR
 
 echo ***************CHYBA*****************
-echo See log file - %TEMP%\AllBuild.log
+echo CHYBA
+rem echo See log file - %TEMP%\AllBuild.log
 echo *************************************
 
 pause
